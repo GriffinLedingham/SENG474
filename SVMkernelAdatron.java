@@ -62,7 +62,7 @@ public class SVMkernelAdatron{
         
         Double sum = 0.0;
         
-        for(int i = 1;i<M;i++)
+        for(int i = 0;i<M;i++)
         {
             sum += Math.pow((x_i[i] - x_j[i]),2);
         }
@@ -100,7 +100,7 @@ public class SVMkernelAdatron{
             }
         }
         
-        return sum2 - (.5)*sum;
+        return sum2 - ((.5)*sum);
 	}
 
 	Double[] ComputeAlphasWithSGD() { 
